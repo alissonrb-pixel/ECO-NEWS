@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO NEWS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <!--Logo-->
+            <a href="#" class="logo">
+                <i class="ph ph-tree">ECO NEWS</i>
+            </a>
+            <!--Menu-->
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link"> Home </a></li>
+                    <li><a href="#dicas" class="nav-link"> Dicas </a></li>
+                    <li><a href="#numeros" class="nav-link"> Sobre </a></li>
+                    <li><a href="#noticias" class="nav-link"> Notícias </a></li>
+                    <li><a href="#eventos" class="nav-link"> Eventos </a></li>
+                    <li><a href="#equipe" class="nav-link">Equipe</a></li>
+                    <li><a href="#contato" class="nav-link"> Contato </a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Trocar Tema">
+                    <i class="ph-duotone ph-star-and-crescent"></i>
+                </button>
+                <a href="#contato" class="btn btn-primary d-none-mobile">Matricule-se</a>
+                <button class="icon-btn menu-btn" id="menu-btn" aria-label="Abrir menu">
+                    <i class="ph-duotone ph-dots-three-outline-vertical"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!---Banner-->
+        <section id="home" class="hero">
+            <div id="carousel" class="carousel">
+                <!--Slide 1-->
+                <div class="carousel-slide active">
+                    <img src="img/slide01.jpg" alt="Natureza" class="carousel-bg">
+                    <div class="carousel-content container">
+                        <h1>O que está acontecendo no mundo?</h1>
+                        <p>Veja as principais noticias a respeito da ecologia nos últimos dias.</p>
+                        <a href="#noticias" class="btn btn-primary">Ver Notícias</a>
+                    </div>
+                </div>
+                <!---->
+                <div class="carousel-slide">
+                    <img src="img/slide02.jpg" alt="Recicle" class="carousel-bg">
+                    <div class="carousel-content container">
+                        <h1>Dicas de reciclagem e reutilização</h1>
+                        <p>Formas que você pode ajudar o planeta com reciclagem e reutilização.</p>
+                        <a href="#dicas" class="btn btn-primary">Acessar Dicas</a>
+                    </div>
+                </div>
+                <!--<div class="carousel-slide">
+                    <img src="img/news02.jpg" alt="Recicle" class="carousel-bg">
+                    <div class="carousel-content container">
+                        <h1>IFSC IFSC</h1>
+                        <p>IFSC IFSC.</p>
+                        <a href="#contato" class="btn btn-primary">Acessar Dicas</a>
+                    </div>
+                </div>-->
+            </div>
+            <button class="carousel-control prev" id="btn-prev">
+                <i class="ph ph-caret-left"></i>
+            </button>
+            <button class="carousel-control next" id="btn-next">
+                <i class="ph ph-caret-right"></i>
+            </button>
+            <button class="circle-1" id="circle-1">
+                <i class="ph-fill ph-circle"></i>
+            </button>
+            <button class="circle-2" id="circle-2">
+                <i class="ph-thin ph-circle"></i>
+            </button>
+        </section>
+        <!--Seção de Dicas-->
+        <section id="dicas" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Dicas Diversas</h2>
+                    <div class="line"></div>
+                    <p>Veja diferentes dicas para sustentabilidade</p>
+                </div>
+                <div class="grid grid-cards">
+                    <article class="card">
+                        <img src="/Aula 9/Aula 08/ECONEWS/img/clue01.jpg" alt="Reciclagem">
+                        <div class="card-icon-wrapper">
+                            <i class="ph-duotone ph-recycle"></i>
+                        </div>
+                        <h3>Dicas de Reciclagem</h3>
+                        <p>Aprenda técnicas de reciclagem não-conhecidas!</p>
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </article>
+                    <article class="card">
+                        <img src="/Aula 9/Aula 08/ECONEWS/img/clue02.jpg" alt="consumismo">
+                        <div class="card-icon-wrapper">
+                            <i class="ph-duotone ph-trash"></i>
+                        </div>
+                        <h3>Redução de Consumismo</h3>
+                        <p>Consuma menos, contribua mais!</p>
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </article>
+                    <article class="card">
+                        <img src="/Aula 9/Aula 08/ECONEWS/img/clue03.jpg" alt="diy">
+                        <div class="card-icon-wrapper">
+                            <i class="ph-duotone ph-hammer"></i>
+                        </div>
+                        <h3>Faça Você Mesmo</h3>
+                        <p>Projetos eco-friendly para realizar em casa</p>
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--Numeros-->
+        <section id="numeros" class="section stats-section">
+            <div class="container">
+                <div class="section-title title-light">
+                    <h2>Impacto da ECO NEWS</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="grid grid-stats">
+                    <div class="stat-box">
+                        <i class="ph-duotone ph-tree-evergreen"></i>
+                        <span class="stat-num" data-target="2500">0</span>
+                        <p>Árvores Plantadas</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="ph-duotone ph-waves"></i>
+                        <span class="stat-num" data-target="3500">0</span>
+                        <p>Kg de lixo recolhido do oceano</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="ph ph-buildings"></i>
+                        <span class="stat-num" data-target="6">0</span>
+                        <p>Cidades Parceiras</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="ph ph-handshake"></i>
+                        <span class="stat-num" data-target="400">0</span>
+                        <p>Empresas parceiras</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seção de noticias, seção divididas em 2 grandes colunas-->
+        <section id="noticias-eventos" class="section">
+            <div class="container grid dual-layout">
+
+                <!-- Coluna 1 -->
+                <div class="news-container" id="noticias">
+                    <h3 class="box-title">Recentes no Blog</h3>
+
+                    <article class="news-item">
+                        <img src="img/news01.jpg" alt="Curso PWEB" class="news-img">
+
+                        <div class="news-text">
+                            <h4>A árvore mais antiga do Brasil</h4>
+                            <span class="news-date">11 de maio, 2026</span>
+                            <p>Conheça "Patriarca", a árvore mais antiga do país</p>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <img src="img/news02.jpg" alt="Curso PWEB" class="news-img">
+
+                        <div class="news-text">
+                            <h4>Tudo sobre gambás</h4>
+                            <span class="news-date">13 de maio, 2026</span>
+                            <p>Conheça tudo sobre esse animalzinho e descubra sua importância para o ecossistema</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Coluna 2 - Eventos -->
+                <div class="events-container" id="eventos">
+                    <h3 class="box-title">Próximos eventos</h3>
+
+                    <!-- Evento 1 -->
+                    <div class="event-item">
+                        <div class="event-calendar">
+                            <span class="day">15</span>
+                            <span class="month">Nov</span>
+                        </div>
+
+                        <div class="event-text">
+                            <h4>Trabalho Voluntário de Coleta de Lixo</h4>
+
+                            <span class="event-meta">
+                                <i class="ph ph-map-pin"></i> Parque Sul Joabeça |
+                                <i class="ph ph-clock"></i> 14:30
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Evento 2 -->
+                    <div class="event-item">
+                        <div class="event-calendar">
+                            <span class="day">16</span>
+                            <span class="month">Nov</span>
+                        </div>
+
+                        <div class="event-text">
+                            <h4>Palestra do Pearson Important</h4>
+
+                            <span class="event-meta">
+                                <i class="ph ph-map-pin"></i> Auditório São Salomão |
+                                <i class="ph ph-clock"></i> 20:30
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Evento 3 -->
+                    <div class="event-item">
+                        <div class="event-calendar">
+                            <span class="day">29</span>
+                            <span class="month">Nov</span>
+                        </div>
+
+                        <div class="event-text">
+                            <h4>Bate Papo: IA e o uso de água</h4>
+
+                            <span class="event-meta">
+                                <i class="ph ph-map-pin"></i> Video-Chamada |
+                                <i class="ph ph-clock"></i> 19:30
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="equipe" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossa Equipe</h2>
+                    <div class="line"></div>
+                    <p>Conheça nossa equipe!</p>
+                </div>
+                <div class="grid grid-cards">
+                    <article class="card2">
+                        <img src="/Aula 9/Aula 08/ECONEWS/img/team01.jpg" alt="Foto De membro da equipe">
+                        <h1>Alessão Da Silva</h1>
+                        <h2>Programador</h2>
+                        <p>Juntando programação com o bem-estar do planeta</p>
+                        <div class="social-links">
+                            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                            <a href="#"><i class="ph ph-github-logo"></i></a>
+                            <a href="#"><i class="ph ph-youtube-logo"></i></a>
+                        </div>
+                    </article>
+                    <article class="card2">
+                        <img src="/Aula 9/Aula 08/ECONEWS/img/team02.jpg" alt="Foto De membro da equipe">
+                        <h1>Alexandre Dias</h1>
+                        <h2>Ecólogo</h2>
+                        <p>Usando nossa voz par ao bem</p>
+                        <div class="social-links">
+                            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                            <a href="#"><i class="ph ph-github-logo"></i></a>
+                            <a href="#"><i class="ph ph-youtube-logo"></i></a>
+                        </div>
+                    </article>
+                    <article class="card2">
+                        <img src="/Aula 9/Aula 08/ECONEWS/img/team03.jpg" alt="Foto De membro da equipe">
+                        <h1>Alice Ramos</h1>
+                        <h2>Redatora</h2>
+                        <p>Os mantendo informados</p>
+                        <div class="social-links">
+                            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                            <a href="#"><i class="ph ph-github-logo"></i></a>
+                            <a href="#"><i class="ph ph-youtube-logo"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section bg-alt" id="contato">
+            <div class="container grid contact-layout">
+                <div class="contact-info">
+                    <h2>Tens uma idéia, uma notícia, ou até uma proposta?</h2>
+                    <p>Nos escreva, e nossa equipe o responderá o mais rápido o possível!
+                    </p>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-envelope-simple"></i>
+                            contato@econws.edu.br
+                        </li>
+                        <li><i class="ph ph-phone"></i>
+                            (47) 99999-0000
+                        </li>
+                        <li><i class="ph ph-buildings"></i>
+                            Av. dos Expedicionários, 2150 - Campo da Água
+                            Verde -Canoinhas/SC
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="return false;">
+                        <div class="input-group">
+                            <label for="nome">Como devemos te chamar?</label>
+                            <input type="text" id="nome" placeholder="Seu nome completo">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-mail para contato</label>
+                            <input type="email" id="email" placeholder="seu.melhor@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="msg">Mensagem</label>
+                            <textarea id="msg" rows="4" placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container grid footer-grid">
+            <!--1ª Coluna-->
+            <div class="brand-col">
+                <a href="#" class="logo text-light">
+                    <i class="ph ph-tree">ECO NEWS</i>
+                </a>
+                <p>Lutamos hoje para não nos preocuparmos amanhã
+                </p>
+            </div>
+            <!--2ª Coluna-->
+            <div class="link-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#dicas">Nossas Dicas</a></li>
+                    <li><a href="#numeros">Impactos</a></li>
+                </ul>
+            </div>
+            <!--3ª Coluna-->
+            <div class="link-col">
+                <h4>Comunidade</h4>
+                <ul>
+                    <li><a href="#noticias">Blog & Notícias</a></li>
+                    <li><a href="#eventos">Agenda e Eventos</a></li>
+                    <li><a href="#equipe">Nossa Equipe</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <!--4ª Coluna-->
+            <div class="social-col">
+                <h4>Acompanhe</h4>
+                <div class="social-links">
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#"><i class="ph ph-github-logo"></i></a>
+                    <a href="#"><i class="ph ph-youtube-logo"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ECONEWS. Todos os direitos reservados.
+                Desenvolvedor: Alisson Bedretchuk</p>
+        </div>
+    </footer>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
